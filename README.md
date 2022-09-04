@@ -1,11 +1,5 @@
-# portfolio
-https://j-boardman.github.io/portfolio/
+# My Projects
 
-Simple portfolio project for FreeCodeCamp, posted here for future endevavours :)
+## Diploma of Web Development
 
-Notes / To-do:
-
-Projects section: Independent - Open Source - Student (include mini previews)
-Language search functionality: https://www.youtube.com/watch?v=AryZSCeKU9Y
-
-
+## The Odin Project

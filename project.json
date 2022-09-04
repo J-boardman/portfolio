@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "name": "Project Name",
+      "description": "Project Description",
+      "techStack": ["#1", "#2", "#3", "4"],
+      "repository": "link",
+      "url": "link"
+    }
+  ]
+}

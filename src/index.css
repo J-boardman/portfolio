@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+
+* {
+  margin: 0;
+}
+
+:root {
+  /* VS CODE DARK THEME */
+  --background: #191919;
+  --background_light: #2d2d2d;
+  --background_medium: #252526;
+  --background_footer: #007acc;
+  --code: #868585;
+
+  /* HTML COLORS */
+  --logo_html: #c5662e;
+
+  /* JAVASCRIPT COLORS */
+  --logo_js: #cbcb3f;
+  --logo_jsx: #00d8ff;
+  --constant: #569cd6;
+  --constant_brackets: #1a79de;
+  --variable: #5faceb;
+  --parameter: #7cdcfe;
+
+  --function: #dedba4;
+  --function_brackets: #d8b709;
+  
+  --conditional: #c686be;
+  --conditional_brackets: #b05c9a;
+  
+  --string: #ce7f48;
+  --number: #8ab590;
+  --comment: #56874e;
+  
+}
+
+body {
+  background-color: var(--background);
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: 5vh 90vh 5vh;
+  min-height: 100vh;
+}
+
+
+#root > section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 5rem;
+}
+
+/*** NAVBAR  ***/
+nav {
+  background-color: var(--background_medium);
+  display: flex;
+}
+
+nav > a {
+  background-color: var(--background_light);
+  border-right: 1px solid var(--background);
+  color: var(--code);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.25rem 3rem 0.25rem 1rem;
+}
+
+.nav-active {
+  background-color: var(--background);
+  color: white;
+}
+
+.nav-icon {
+  margin-right: 5px;
+}
+
+/*** FOOTER ***/
+footer {
+  align-items: center;
+  background-color: var(--background_footer);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+footer > a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*** ABOUT  ***/
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+#about > h1 {
+  font-size: 4rem;
+}
+
+/*** CONTACT  ***/
+#contact input {
+  background: var(--background_light);
+  color: var(--code);
+  font-size: 1.3rem;
+  border: none;
+  text-align: left;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+#contact input:focus {
+  border: 1px dotted var(--logo_html);
+}
+
+@media screen and (max-width:750px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav > a {
+    width: 100vw;
+    padding: 0;
+  }
+
+  #about {
+    font-size: 2rem;
+  }
+
+  #about > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #about {
+    font-size: 1.5rem;
+  }
+
+  #about .comment {
+    font-size: 1.25rem;
+  }
+}
+.const { color: var(--constant)}
+.variable { color: var(--variable)}
+.parameter { color: var(--parameter)}
+.function { color: var(--function);}
+.conditional { color: var(--conditional);}
+.string { color: var(--string);}
+.comment { color: var(--comment);}
