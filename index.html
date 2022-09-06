@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jayde's Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayde's Portfolio</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <button value="about" class="nav-active"><img src="./src/img/javascript_1.svg" alt="js-logo"> portfolio.js</button>
+    <button value="projects"><img src="./src/img/javascript_1.svg" alt="js-logo"> projects.js</button>
+    <button value="contact"><img src="./src/img/javascript_1.svg" alt="js-logo"> contact.js</button>
+  </nav>
+  <main></main>
+  <footer>
+    Copyright
+  </footer>
+</body>
+<template id="about">
+  <!-- ABOUT TEMPLATE -->
+  <h1>
+    <span class="const">const </span>
+    <span class="parameter">myName</span> = 
+    <br class="breaker" />
+    <span class="string"> "Jayde Boardman"</span>; 
+  </h1>
+  
+  <article>
+    <p>
+      <span class="const">const </span>  
+      <span class="parameter">profession</span> =
+      <br class="mobile-breaker"/>
+      <span class="string"> "Full Stack Developer"</span>;
+    </p>
+  </article>
+  
+  <article>
+    <p class="comment">// Click the project tab above</p>
+    <p class="comment">// to see my current work!</p>
+  </article>
+</template>
+
+<template id="projects">
+  <!-- PROJECTS TEMPLATE -->
+  <p>Projects Section</p>
+</template>
+
+
+
+<template id="contact">
+  <!-- CONTACT TEMPLATE -->
+  <h3>Contact Section</h3>
+  <form action="https://formsubmit.co/boardmanjayde@gmail.com" method="post">
+    <input type="hidden" name="_subject" value="New email from your portfolio!">
+    <input type="hidden" name="_autoresponse" value="Thank you for your message, I will get back to you ASAP! :D \n\n *This is an automated reponse*">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" style="display:none">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" id="" cols="30" rows="10"></textarea>
+    <button>Submit</button>
+  </form>
+</template>
 </html>

@@ -42,21 +42,9 @@ body {
   font-size: 1.3rem;
   font-weight: bolder;
   margin: 0;
-}
-
-#root {
   display: grid;
   grid-template-rows: 5vh 90vh 5vh;
   min-height: 100vh;
-}
-
-
-#root > section {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  gap: 5rem;
 }
 
 /*** NAVBAR  ***/
@@ -65,24 +53,38 @@ nav {
   display: flex;
 }
 
-nav > a {
+nav > button {
+  align-items: center;
+  border: none;
   background-color: var(--background_light);
   border-right: 1px solid var(--background);
   color: var(--code);
+  cursor: pointer;
   display: flex;
-  align-items: center;
+  font-size: 1.3rem;
+  font-family: "Source Code Pro", monospace;
   font-weight: bold;
-  text-decoration: none;
   padding: 0.25rem 3rem 0.25rem 1rem;
+  text-decoration: none;
 }
+
 
 .nav-active {
   background-color: var(--background);
   color: white;
 }
 
-.nav-icon {
+nav > button > img {
   margin-right: 5px;
+}
+
+/*** MAIN  ****/
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 5rem;
 }
 
 /*** FOOTER ***/
@@ -101,7 +103,7 @@ footer > a {
 }
 
 /*** ABOUT  ***/
-#about {
+.about {
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -109,12 +111,12 @@ footer > a {
   font-size: 2rem;
 }
 
-#about > h1 {
+.about > h1 {
   font-size: 4rem;
 }
 
 /*** CONTACT  ***/
-#contact input {
+.contact input {
   background: var(--background_light);
   color: var(--code);
   font-size: 1.3rem;
@@ -124,36 +126,41 @@ footer > a {
   padding: 0.25rem;
 }
 
-#contact input:focus {
+.contact input:focus {
   border: 1px dotted var(--logo_html);
 }
 
 @media screen and (max-width:750px) {
+  body {
+    grid-template-rows: max-content 1fr 5vh;
+  }
+  
   nav {
     flex-direction: column;
     align-items: center;
+    height: max-content;
   }
 
-  nav > a {
+  nav > button {
     width: 100vw;
     padding: 0;
   }
 
-  #about {
+  .about {
     font-size: 2rem;
   }
 
-  #about > h1 {
+  .about > h1 {
     font-size: 2.5rem;
   }
 }
 
 @media screen and (max-width:500px) {
-  #about {
+  .about {
     font-size: 1.5rem;
   }
 
-  #about .comment {
+  .about .comment {
     font-size: 1.25rem;
   }
 }
