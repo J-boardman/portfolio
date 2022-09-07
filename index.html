@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jayde's Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
-  <script type="module" src="./script.js" defer></script>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/script.js" defer></script>
 </head>
 <body>
   <nav>
@@ -19,49 +19,188 @@
     Copyright
   </footer>
 </body>
+
 <template id="about">
   <!-- ABOUT TEMPLATE -->
   <h1>
-    <span class="const">const </span>
-    <span class="parameter">myName</span> = 
-    <br class="breaker" />
-    <span class="string"> "Jayde Boardman"</span>; 
+    <p><span class="const">const </span>
+      <span class="parameter">myName</span> =
+    </p>
+    <span class="string"> "Jayde Boardman"</span>;
   </h1>
   
   <article>
     <p>
-      <span class="const">const </span>  
+      <span class="const">let </span>  
       <span class="parameter">profession</span> =
-      <br class="mobile-breaker"/>
-      <span class="string"> "Full Stack Developer"</span>;
+    </p>
+    <span class="string">"Full Stack Developer"</span>;
+  </article>
+
+  <article>
+    <p>
+      <span class="const">let</span>
+      <span class="parameter">currentStack</span> =
+    </p>
+    <p>
+      <span class="function_brackets">[</span><span class="string">"MySQL"</span>,
+      <span class="string">"Express"</span>,
+      <span class="string">"React"</span>,
+      <span class="string">"Node"</span><span class="function_brackets">]</span>;
+
     </p>
   </article>
   
   <article>
-    <p class="comment">// Click the project tab above</p>
-    <p class="comment">// to see my current work!</p>
+    <p class="comment">// Click the projects tab</p>
+    <p class="comment">// above to see my work!</p>
   </article>
 </template>
 
 <template id="projects">
   <!-- PROJECTS TEMPLATE -->
-  <p>Projects Section</p>
+  <h3>
+    <span class="const">const</span> 
+    <span class="parameter">myProjects</span> = 
+    <span class="string">"Impressive"</span>;
+  </h3>
+  <h4>
+    <span class="const">const</span>
+    <span class="parameter">projects</span> = 
+    <span class="function_brackets">[</span>
+  </h4>
+  <article class="carousel">
+    <!-- HIGH STREET GYM -->
+    <img src="./src/img/high_street.png" width="320" height="160" alt="picsum">
+    <div>
+      <p class="conditional_brackets">{</p>
+      <p class="tab">
+        <span class="parameter">name:</span>
+        <span class="string">"High Street Gym"</span>,
+      </p>
+      <p class="tab">
+        <span class="parameter"> techStack:</span>
+        <span class="const">[</span><span class="string">"MySQL"</span>,
+        <span class="string">"Express"</span>,
+        <span class="string">"React"</span>,
+        <span class="string">"Node"</span><span class="const">]</span>,
+      </p>
+      <p class="tab">
+        <span class="parameter">links:</span> 
+        <span class="const">[</span><a href="#" target="_blank">"live"</a>, <a href="#" target="_blank">"repository"</a><span class="const">]</span>,</p>
+      <p><span class="conditional_brackets">}</span>,</p>
+    </div>
+    <a href="https://mobilehour.up.railway.app/" target="_blank">
+      <img src="./src/img/mobile_hour.png" width="320" height="160" alt="picsum">
+    </a>
+    <div>
+      <p class="conditional_brackets">{</p>
+      <p class="tab">
+        <span class="parameter">name:</span>
+        <span class="string">"Mobile Hour"</span>,
+      </p>
+      <details>
+        <summary class="tab"><span class="parameter">description:</span>
+        <span class="string">"Click"</span>,</summary>
+        <p class="tab string">"This is my first full stack application using Node/Express. It was made for the fictious company "The Mobile Hour", as part of TAFE Queensland's Diploma of Web Development curriculum. It was made to prove compentency in backend development using the MVC design pattern, database integration, user authentication / authorisation and the general construction of dynamic websites."</p>
+      </details>
+      <p class="tab">
+        <span class="parameter"> techStack:</span>
+        <span class="const">[</span><span class="string">"MySQL"</span>,
+        <span class="string">"Express"</span>,
+        <span class="string">"Node"</span><span class="const">]</span>,
+      </p>
+      <p class="tab">
+        <span class="parameter">links:</span> 
+        <span class="const">[</span><a href="https://mobilehour.up.railway.app/" target="_blank">"live"</a>, <a href="https://github.com/J-boardman/mobile_hour" target="_blank">"repository"</a><span class="const">]</span>,</p>
+      <p><span class="conditional_brackets">}</span>,</p>
+    </div>
+    <a href="https://j-boardman.github.io/des520at3/" target="_blank">
+      <img src="./src/img/ml_strength.png" width="320" height="160" alt="mobile_hour">
+    </a>
+    <div>
+      <p class="conditional_brackets">{</p>
+      <p class="tab">
+        <span class="parameter">name:</span>
+        <span class="string">"ML Strength"</span>,
+      </p>
+      <details>
+        <summary class="tab"><span class="parameter">description:</span>
+        <span class="string">"Click"</span>,</summary>
+        <p class="tab string">"ML Strength: A simple static gym website made created as part of TAFE Queensland's Diploma of Web Development curriculum. Also my first website using Tailwind CSS."</p>
+      </details>
+      <p class="tab">
+        <span class="parameter"> techStack:</span>
+        <span class="const">[</span><span class="string">"TailwindCSS"</span><span class="const">]</span>,
+      </p>
+      <p class="tab">
+        <span class="parameter">links:</span> 
+        <span class="const">[</span><a href="https://j-boardman.github.io/des520at3/" target="_blank">"live"</a>, <a href="https://github.com/J-boardman/des520at3" target="_blank">"repository"</a><span class="const">]</span>,</p>
+      <p><span class="conditional_brackets">}</span>,</p>
+    </div>
+  </article>
+  <p>
+    <span class="function_brackets">]</span>;</p>
 </template>
 
 
 
 <template id="contact">
   <!-- CONTACT TEMPLATE -->
-  <h3>Contact Section</h3>
-  <form action="https://formsubmit.co/boardmanjayde@gmail.com" method="post">
-    <input type="hidden" name="_subject" value="New email from your portfolio!">
-    <input type="hidden" name="_autoresponse" value="Thank you for your message, I will get back to you ASAP! :D \n\n *This is an automated reponse*">
-    <input type="hidden" name="_template" value="table">
-    <input type="text" name="_honey" style="display:none">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" id="" cols="30" rows="10"></textarea>
-    <button>Submit</button>
-  </form>
+  <article>
+    <p>
+      <span class="const">const </span>
+      <span class="function">portfolio</span> =
+      <span class="function_brackets">(</span><span class="parameter">employer</span><span class="function_brackets">)</span>
+      <span class="const">=></span>
+      <span class="function_brackets">{</span>
+    </p>
+    <p class="border-left-function">
+      &emsp; 
+      <span class="parameter">employer</span>.<span class="parameter">impressed</span>
+      = <span class="const">true</span>;
+    </p>
+    <p class="border-left-function tabover">
+       
+      <span class="parameter"> employer</span>.<span class="parameter">response</span>
+      = <span class="string"> "You're hired!"</span>;
+    </p>
+    <p>
+      <span class="function_brackets">}</span>;
+    </p>
+  </article>
+  <article>
+    <p>
+      <span class="const">const</span>
+      <span class="function">contactForm</span> =
+      <span class="function_brackets">(</span><span class="parameter">sender</span><span class="function_brackets">)</span>
+      <span class="const">=></span>
+      <span class="function_brackets">{</span>
+    </p>
+    <form action="https://formspree.io/f/myyvkwdl" method="POST">
+      <p>
+        <span class="const">const</span>
+        <span class="conditional_brackets">{</span> 
+        <label for="name">name</label>,
+        <label for="email">email</label>,
+        <label for="subject">subject</label>,
+        <label for="message"> message</label>
+        <span class="conditional_brackets">}</span> =
+        <span class="parameter">sender</span>;
+      </p>
+      
+      <input id="name" type="text" name="sender" placeholder="Enter Your Name" required>
+  
+      <input id="email" type="email" name="email" placeholder="Enter Your Email" required>
+  
+      <input id="subject" type="text" name="subject" placeholder="Subject" required>
+  
+      <textarea id="message" name="message" placeholder="Message"
+      rows="5" maxlength="800"></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+    <p><span class="function_brackets">}</span>;</p>
+  </article>
 </template>
 </html>
