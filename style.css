@@ -44,7 +44,7 @@ body {
   margin: 0;
   display: grid;
   /* grid-template-rows: 5vh minmax(90vh, max-content) 5vh; */
-  grid-template-rows: minmax(5vh, max-content) 90vh 5vh;
+  grid-template-rows: minmax(5vh, max-content) minmax(90vh, auto) 5vh;
   min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
@@ -85,7 +85,6 @@ nav > button > img {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 2rem 0.5rem;
 }
 
@@ -112,12 +111,13 @@ main {
   gap: 2rem;
   margin: 0 auto;
   font-size: 2rem;
-  overflow-y: scroll;
 }
 
 main > h1 {
   font-size: 4rem;
 }
+
+
 
 /*** PROJECTS  ***/
 .projects {
@@ -140,12 +140,17 @@ main > h1 {
   width: fit-content;
 }
 
-.projects a {
+.projects a, .modal_activator {
   color: var(--string);
 }
 
-.projects a:hover {
+.projects a:hover, .modal_activator:hover {
   color: #f89956
+}
+
+.modal_activator {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .carousel {
@@ -176,11 +181,21 @@ main > h1 {
   margin-left: 2ch;
 }
 
+.features * {
+  margin-left: 2ch;
+  color: var(--string);
+}
+
+ul , li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 
 /*** CONTACT  ***/
 .contact {
   font-size: 1.5rem;
-  justify-content: start;
+  
 }
 
 .border-left-function {
@@ -306,6 +321,8 @@ textarea {
   }
 
 }
+
+
 .const { color: var(--constant)}
 .variable { color: var(--variable)}
 .parameter { color: var(--parameter)}
