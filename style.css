@@ -294,6 +294,11 @@ footer {
   padding: 0 2rem;
 }
 
+footer > a {
+  position: relative;
+  top: 3px;
+}
+
 
 @media screen and (max-width:750px) {
   nav {
@@ -302,6 +307,11 @@ footer {
   }
 
   nav > button {
+    width: 100vw;
+    padding: 0;
+  }
+
+  nav > a {
     width: 100vw;
     padding: 0;
   }
@@ -321,6 +331,11 @@ footer {
   .carousel {
     grid-template-columns: 1fr;
   }
+
+  footer {
+    justify-content: space-between;
+  }
+
 }
 
 @media screen and (max-width:500px) {
