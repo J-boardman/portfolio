@@ -150,7 +150,7 @@ main > h1 {
 
 .projects a, .modal_activator {
   color: var(--string);
-}
+}q
 
 .projects a:hover, .modal_activator:hover {
   color: #f89956
