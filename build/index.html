@@ -132,23 +132,23 @@
   </body>
   <!-- ABOUT -->
   <template id="about">
-    <section class="flex flex-col gap-12 mx-auto w-fit">
-      <article class="text-2xl lg:text-7xl">
+    <section class="flex flex-col gap-12 mx-auto w-fit px-2">
+      <article class="text-2xl md:text-4xl lg:text-7xl">
         <span class="text-const">const</span>
         <span class="text-constant">myName</span> =
         <div class="pt-2"><span class="text-str">"Jayde Boardman"</span>;</div>
       </article>
-      <article class="text-xl lg:text-5xl">
+      <article class="text-xl md:text-3xl lg:text-5xl">
         <span class="text-const">let</span>
         <span class="text-param">profession</span> =
         <div class="pt-2">
           <span class="text-str">"Full Stack Developer"</span>;
         </div>
       </article>
-      <article class="text-xl lg:text-5xl">
+      <article class="text-xl md:text-3xl lg:text-5xl">
         <span class="text-const">let</span>
         <span class="text-param">currentStack</span> =
-        <div class="text-lg lg:text-4xl pt-2">
+        <div class="text-lg md:text-2xl lg:text-4xl pt-2">
           <span class="text-funct-brackets">[</span>
           <span class="text-str">"MySQL"</span>,
           <span class="text-str">"Express"</span>,
@@ -158,16 +158,16 @@
         </div>
       </article>
 
-      <p class="text-comment font-bold text-sm lg:text-3xl">// Click the projects tab to see my work!</p>
+      <p class="text-comment font-bold text-sm md:text-xl lg:text-3xl">// Click the projects tab to see my work!</p>
 
-      <p class="text-comment font-bold text-sm lg:text-3xl">// Click the contact tab to get in touch!</p>
+      <p class="text-comment font-bold text-sm md:text-xl lg:text-3xl">// Click the contact tab to get in touch!</p>
       </article>
     </section>
   </template>
   <!-- CONTACT -->
   <template id="contact">
     <section class="flex flex-col gap-12 mx-auto w-fit text-xl font-bold">
-      <article class="text-sm lg:text-3xl">
+      <article class="text-sm md:text-xl lg:text-3xl">
         <div>
           <span class="text-const">const</span>
           <span class="text-func">portfolio</span> =
@@ -194,7 +194,7 @@
         <div><span class="text-funct-brackets">}</span>;</div>
       </article>
 
-      <article class="text-sm lg:text-3xl">
+      <article class="text-sm md:text-xl lg:text-3xl">
         <div>
           <span class="text-const">const</span>
           <span class="text-func">contactForm</span> =
@@ -289,7 +289,7 @@
     <!-- PROJECTS -->
     <section
       id="app"
-      class="flex main-height flex-col py-12 w-fit text-md lg:text-3xl font-bold scroll-smooth"
+      class="flex main-height flex-col py-12 w-fit text-md md:text-3xl font-bold scroll-smooth px-2"
     >
       <article>
         <span class="text-conditional">export</span>
@@ -317,7 +317,7 @@
     <!-- HIGH STREET GYM -->
     <section
       id="high_street_gym"
-      class="flex main-height flex-col scroll-mt-12 py-12 w-fit text-sm lg:text-3xl font-bold"
+      class="flex main-height flex-col scroll-mt-12 py-12 w-fit text-sm md:text-3xl font-bold px-2"
     >
     <article>
       <span class="text-conditional">export</span>
@@ -334,7 +334,7 @@
       <span class="text-white">=</span>
       <span class="text-func">useState</span>(
     </article>
-    <article class="pl-[2ch] border-l-[1px] border-l-funct-brackets text-md lg:text-3xl">
+    <article class="pl-[2ch] border-l-[1px] border-l-funct-brackets text-md md:text-3xl">
       <span class="pl-[2ch] text-const-brackets">[</span><span class="text-str">"MySQL"</span>,
       <span class="text-str">"Express"</span>,
       <span class="text-str">"React"</span>,
@@ -366,7 +366,7 @@
         </div>
         <div class="pl-[2ch] text-vs-code">
           <span>&lt;</span><span class="text-const">p</span>>
-          <p class="pl-[2ch] text-white text-xs lg:text-2xl">
+          <p class="pl-[2ch] text-white text-xs md:text-2xl">
             A full stack application for the fictitious organisation High Street Gym. Made as part of TAFE QLD's Diploma of Web Development, with the goals of developing proficiency in delivering both server and client-side content to web pages, as well as using CSS / JS frameworks.</p>
           <span>&lt;/</span><span class="text-const">p</span>>
 
@@ -382,7 +382,7 @@
     </section>
     <section
       id="mobile_hour"
-      class="flex main-height flex-col scroll-mt-12 py-12 w-fit text-md lg:text-3xl font-bold"
+      class="flex main-height flex-col scroll-mt-12 py-12 w-fit text-md md:text-3xl font-bold px-2"
     >
     <!-- MOBILE HOUR -->
     <article>
@@ -400,7 +400,7 @@
       <span class="text-white">=</span>
       <span class="text-func">useState</span>(
     </article>
-    <article class="pl-[2ch] border-l-[1px] border-l-funct-brackets text-md lg:text-3xl">
+    <article class="pl-[2ch] border-l-[1px] border-l-funct-brackets text-md md:text-3xl">
       <span class="pl-[2ch] text-const-brackets">[</span><span class="text-str">"MySQL"</span>,
       <span class="text-str">"Express"</span>,
       <span class="text-str">"Node"</span><span class="text-const-brackets">]</span>
@@ -427,7 +427,7 @@
         </div>
         <div class="pl-[2ch] text-vs-code">
           <span>&lt;</span><span class="text-const">p</span>>
-          <p class="pl-[2ch] text-white text-xs lg:text-2xl">
+          <p class="pl-[2ch] text-white text-xs md:text-2xl">
             This is my first full stack application using Node/Express. It was made for the fictious company "The Mobile Hour", as part of TAFE Queensland's Diploma of Web Development curriculum. It was made to prove compentency in backend development using the MVC design pattern, database integration, user authentication / authorisation and the general construction of dynamic websites.
           </p>
           <span>&lt;/</span><span class="text-const">p</span>>
@@ -443,9 +443,10 @@
 
     
     </section>
+    <!-- ML Strength -->
     <section
       id="ml_strength"
-      class="flex main-height flex-col scroll-mt-12 py-12 w-fit text-md lg:text-3xl font-bold"
+      class="flex main-height flex-col scroll-mt-12 py-12 w-fit text-md md:text-3xl font-bold px-2"
     >
     <article>
       <span class="text-conditional">export</span>
@@ -473,7 +474,7 @@
         </div>
         <div class="pl-[2ch] text-vs-code">
           <span>&lt;</span><span class="text-const">p</span>>
-          <p class="pl-[2ch] text-white text-xs lg:text-2xl">
+          <p class="pl-[2ch] text-white text-xs md:text-2xl">
             This is a simple static site created as part of TAFE Queensland's Diploma of Web Development curriculum. This was my first full site created with Tailwind CSS, which has since become my styling tool of choice.
           </p>
           <span>&lt;/</span><span class="text-const">p</span>>
