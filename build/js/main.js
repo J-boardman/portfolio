@@ -22,7 +22,6 @@ const portfolio = (async() => {
     renderTemplate(e.target.value)
   }));
 
-  // Test alias
   renderTemplate("about");
 })();
 
